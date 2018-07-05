@@ -7,6 +7,10 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
+    <!-- all platforms -->
+  <preference name="phonegap-version" value="cli-6.0.0" />
+  <preference name="orientation" value="landscape" />
+  <preference name="fullscreen" value="true" />
     <content src="index.html" />
     <access origin="http://globalbitx.com/datos.php" />
 </widget>

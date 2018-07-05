@@ -8,5 +8,5 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-    <access origin="global.globalbitx.com/datos.php" />
+    <access origin="http://global.globalbitx.com/datos.php" />
 </widget>

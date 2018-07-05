@@ -15,4 +15,6 @@
 <allow-navigation href="http://globalbitx.com/datos.php*" />
     <content src="index.html" />
     <access origin="http://globalbitx.com/datos.php" />
+    <!-- Don't block any requests -->
+<access origin="*" />
 </widget>

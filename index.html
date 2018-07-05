@@ -5,6 +5,11 @@
 <title>Obtener JSON con AJAX</title>
 
 <style type="text/css">
+.enviar{
+cursor: pointer;
+display: table;
+
+}
 .contenedor-tabla{
 
 display: table;
@@ -63,9 +68,6 @@ display: table-row;
 border: 2px dotted #C0C0C0;
 width: auto;
 }
-	.enviar{
-cursor: pointer;
-}
 </style>
 </head>
 
@@ -79,8 +81,8 @@ cursor: pointer;
 <div class="enviar"><h3>Enviar</h3></div>
 <hr>
 <div class="respuesta"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
 
-<script src="js/jquery-2.1.0.min.js"></script>
 <script>
     $(".enviar").click(function(e) {
 	e.preventDefault();
@@ -92,7 +94,7 @@ cursor: pointer;
 	datos = {"nombre":nombre, "apellido":apellido,"edad":edad};
 
 	$.ajax({
-		url: "http://www.global.globalbitx.com/datos.php",
+		url: "global.globalbitx.com/datos.php",
 		type: "POST",
 		data: datos
 	}).done(function(respuesta){

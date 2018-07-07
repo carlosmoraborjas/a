@@ -93,10 +93,9 @@ width: auto;
 	//"nombre del parámetro POST":valor (el cual es el objeto guardado en las variables de arriba)
 	datos = {"nombre":nombre, "apellido":apellido,"edad":edad};
 
-	$.ajax({
-		url: "http://globalbitx.com/datos.php",
-		type: "POST",
-		data: datos
+	jQuery.get("http://www.google.es", {}, function(data) {
+                alert(data);
+	});
 	}).done(function(respuesta){
 		if (respuesta.estado === "ok") {
 			console.log(JSON.stringify(respuesta));
@@ -120,7 +119,7 @@ width: auto;
 			
 		}
 	});
-});
+	});
 
 
 </script>

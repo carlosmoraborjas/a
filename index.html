@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Obtener JSON con AJAX</title>
+
 <script charset="utf−8" type="text/javascript"> 
 function connect(e) 
 { 
 var term= {button:e}; 
 $.ajax({ 
-url:'http://urldetuservidor/reply.php', 
+url:'http://globalbitx.com/reply.php', 
 type:'POST', 
 data:term, 
 dataType:'json', 
@@ -23,7 +24,6 @@ $("#result").append("<li>"+data[i]+"</li>");
 } 
 });} 
 </script>
-
 </head>
 
 <body>

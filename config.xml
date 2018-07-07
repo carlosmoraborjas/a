@@ -10,7 +10,7 @@
     preference name="phonegap-version" value="cli-6.4.0" />
     <preference name="fullscreen" value="true" />
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="http://globalbitx.com/reply.php/*" />
 </widget>
 
 
